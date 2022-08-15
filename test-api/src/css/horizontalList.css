@@ -1,0 +1,47 @@
+.scroll-container > * {
+  display: grid;
+  gap: var(--xs-gap);
+  grid-auto-flow: row;
+  grid-template-columns: repeat(30, 180px);
+  margin-bottom: var(--middle-gap);
+  margin-top: var(--xs-gap);
+}
+
+.scroll-container a {
+  width: min(30%, 280px);
+  aspect-ratio: 1/1.5;
+}
+
+.scroll-container a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-10);
+  transition: var(--middle-transition);
+}
+
+.scroll-container a:hover img {
+  transform: scale(0.95);
+  filter: blur(1px) drop-shadow(0 0 4px white);
+}
+
+/* Popular.tsx styling */
+
+.popular-container {
+  display: grid;
+  gap: var(--xs-gap);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.popular-container img {
+  width: 100%;
+}
+
+.popular-container a img {
+  transition: var(--middle-transition);
+}
+
+.popular-container a:hover img {
+  transform: scale(0.95);
+  filter: blur(1px) drop-shadow(0 0 4px white);
+}

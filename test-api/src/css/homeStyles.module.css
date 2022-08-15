@@ -1,0 +1,33 @@
+.home {
+  display: grid;
+  gap: var(--middle-gap);
+}
+
+.home h1 {
+  font-size: var(--big-font);
+}
+
+.home p {
+  width: min(90%, 1125px);
+}
+
+.home a {
+  text-decoration: none;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-10);
+  border: 2px solid var(--gold);
+  transition: var(--middle-transition);
+  user-select: none;
+  font-weight: bold;
+  font-size: var(--cta-font);
+  letter-spacing: 1px;
+  width: min(500px, 90%);
+  text-align: center;
+}
+
+.home a:hover {
+  background-color: var(--black);
+  color: var(--gold);
+}

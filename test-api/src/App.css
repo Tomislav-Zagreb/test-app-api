@@ -1,0 +1,6 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: var(--big-gap);
+  padding-inline: var(--padding-five-percent);
+}

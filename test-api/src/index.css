@@ -1,0 +1,79 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --gold: #efdb00;
+  --light-grey: rgb(199, 199, 199);
+  --dark-grey: rgb(105, 105, 105);
+  --greenish: rgb(93, 199, 222);
+
+  --main-font: playfair;
+
+  --big-gap: 80px;
+  --middle-gap: 40px;
+  --small-gap: 20px;
+  --xs-gap: 1rem;
+  --padding-five-percent: 5%;
+  --border-radius-30: 30px;
+  --border-radius-10: 10px;
+
+  --middle-font: clamp(1rem, 4vw, 2rem);
+  --cta-font: clamp(1rem, 3vw, 1.5rem);
+  --big-font: clamp(2rem, 6vw, 3.75rem);
+  --small-font: clamp(0.35rem, 3vw, 1rem);
+
+  --short-transition: all 0.1s ease-in-out;
+  --middle-transition: all 0.35s ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--main-font);
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("./files/Playfair_Display.zip");
+}
+
+::selection {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+  border-radius: 30px;
+  border: var(--black) solid 5px;
+}
+
+.active {
+  font-weight: bold;
+  opacity: 1 !important;
+}
